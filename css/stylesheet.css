@@ -2,7 +2,9 @@ body{
 	background-color: #323232;
 	margin:0;
 }	
-ul{
+#navbar{
+	z-index: 5;
+	opacity: 1;
 	display: block;
 	list-style-type:none;
 	margin: 0;
@@ -10,15 +12,15 @@ ul{
 	overflow: hidden;
 	background-color: #656565;
 	border:#656565;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	width: 100%
 	
 }
-li{
+#navBar li{
 	float: left;
 }
-li a{
+#navBar li a{
 	display: block;
 	padding: 14px;
 	color: #cfcfcf;
@@ -26,19 +28,32 @@ li a{
 	text-decoration: none;
 	background-color: #656565;
 }
-li a.home{
+#navBar li a.home{
 	background-color: #999999;
 	color: black;
 }
-li a:hover{
+#navbar li a:hover{
 	background-color: #CCA421;
 	color: black;
 }
-#text1{
-	padding: 20px;
+#banner{
+	height: 70%;
+	width: 100%;
+	overflow: hidden;
 }
-#text1 p{
-	color: #bbbbbb;
-	font-family: arial;
-	font-size: 22;
+#banner img{
+	height: 100%;
+}
+p{
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #cfcfcf;
+}
+#rickRollMsg{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #cfcfcf;
+	text-align: center;
+}
+#rickRollPlr{
+	width: 100%;
 }

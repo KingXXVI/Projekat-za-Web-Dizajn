@@ -3,6 +3,9 @@ body{
 	margin:0;
 }	
 #navbar{
+	box-shadow: 0 3px 8px #222;
+}
+#navbar ul{
 	z-index: 5;
 	opacity: 1;
 	display: block;
@@ -17,10 +20,10 @@ body{
 	width: 100%
 	
 }
-#navBar li{
+#navBar ul li{
 	float: left;
 }
-#navBar li a{
+#navBar ul li a{
 	display: block;
 	padding: 14px;
 	color: #cfcfcf;
@@ -28,13 +31,13 @@ body{
 	text-decoration: none;
 	background-color: #656565;
 }
-#navBar li a.home{
+#navBar ul li a.home{
 	background-color: #999999;
 	color: black;
 }
-#navbar li a:hover{
+#navbar ul li a:hover{
 	background-color: #CCA421;
-	color: black;
+	color: #252525;
 }
 #banner{
 	height: 70%;
@@ -49,11 +52,37 @@ p{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #cfcfcf;
 }
-#rickRollMsg{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #cfcfcf;
-	text-align: center;
+#entries{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 125%;
+	margin-top: 1.5%;
 }
-#rickRollPlr{
+.entry{
+	width: 24%;
+	height: 48%;
+	border: 1px solid #cfcfcf;
+	box-shadow: 0 0 10px #111;
+	overflow: hidden;
+	background-color: #424242;
+}
+.entry img{
+	display: block;
 	width: 100%;
+}
+.entry h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background-color: #CCA421;
+	color: #252525;
+	margin: 0;
+	padding: 8px;
+	box-shadow: 0 2px 5px #222;
+}
+.entry p{
+	padding: 5px;
+	padding-top: 0;
+	font-size: 18px;
 }

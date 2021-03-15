@@ -1,7 +1,21 @@
+/*
+background color - #323232
+text background color - #424242
+shadow color - #222
+navigatio bar background - #656565
+highlight color - #CCA421
+home and about button background - #999999
+text color - #cfcfcf
+highlight text color - #252525
+*/
 body{
 	background-color: #323232;
 	margin:0;
 }
+a{
+	text-decoration: none;
+}
+
 /* navbar style */
 
 #navbar{
@@ -9,35 +23,49 @@ body{
 	position: sticky;
 	top: 0;
 	z-index: 5;
+	height: 6%;
 }
 #navbar ul{
-	display: block;
+	display: flex;
 	list-style-type:none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #656565;
-	border:#656565;
-	position: sticky;
-	width: 100%
-	
+	width: 100%;
+	height: 100%;
 }
-#navBar ul li{
-	float: left;
+#navbar ul li{
+	height: 100%;
 }
-#navBar ul li a{
-	display: block;
-	padding: 14px;
-	color: #cfcfcf;
-	font-family: arial;
-	text-decoration: none;
+#page a div, #home a div, #about a div{
 	background-color: #656565;
+	color: #cfcfcf;
+	font-family: Arial, Helvetica, sans-serif;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
-#navBar ul li a.home{
+#home a div, #about a div{
 	background-color: #999999;
 	color: black;
+	
 }
-#navbar ul li a:hover{
+#home, #about{
+	width: 5%;
+}
+#page{
+	width: 7%;
+}
+#about{
+	margin-left: auto;
+}
+#home a div{
+	background-color: #999999;
+}
+#navbar ul li a div:hover{
 	background-color: #CCA421;
 	color: #252525;
 }
@@ -48,7 +76,7 @@ body{
 	height: 70%;
 	width: 100%;
 	overflow: hidden;
-	/*position: sticky;*/
+	position: sticky;
 	top: 0;
 	z-index: -1;
 }
@@ -112,7 +140,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	width: 65%;
-	margin-left: 5.2%;
+	margin-left: 5%;
 	margin-right: 5%;
 	background-color: #424242;
 	box-shadow: 0 0 10px #222;
@@ -121,13 +149,13 @@ p{
 	width: 100%;
 	z-index: -0;
 	position: sticky;
-	top: 0;
+	top: 6%;
 }
 #articletitle{
 	width: 100%;
 	margin: auto;
 	position: sticky;
-	top: 0;
+	top: 6%;
 	background-color: #CCA421;
 	z-index: 1;
 	box-shadow: 0 -1px 10px #222;
@@ -146,14 +174,15 @@ p{
 	margin-top: 0;
 	margin-bottom: 10px;
 	color: #252525;
-	background-color: #998541;
-	
 }
 #articleBody{
 	z-index: 1;
 	background-color: #424242;
 	box-shadow: 0 0 10px #222;
 	padding: 10px;
+}
+#articletext{
+	text-indent: 5%;
 }
 #sidebar{
 	width: 20%;

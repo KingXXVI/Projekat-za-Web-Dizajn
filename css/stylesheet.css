@@ -221,6 +221,7 @@ a{
 	}
 	#articleBody{
 		z-index: 1;
+		min-height: 80vh;
 		background-color: #424242;
 		box-shadow: 0 0 10px #222;
 		padding: 10px;

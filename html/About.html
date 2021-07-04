@@ -45,8 +45,13 @@
                     </div>
                 </div>
                 <div id="sideBar"> 
-                    <div>
-        
+                    <div id="formDiv">
+                        <span>Newsletter</span>
+                        <form action="" id="newsletter" method="dialog">
+                            <input type="text" name="fName" id="input" placeholder="Name">
+                            <input type="email" name="fMail" id="input" placeholder="Email">
+                            <input type="submit" value="Submit">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -61,6 +66,10 @@
                 <div id="footerLicenceInfo">
                     <span>this is where i would put my licencing info. IF I HAD IT!!!!!</span>
                 </div>
-            </div>	
+            </div>
+            <button onclick="topFunction()" id="topBtn" title="Back to Top">
+                <img id="topBtnImg" src="../img/topBtn.svg" alt="">
+            </button>
+            <script src="../js/back-to-top-btn.js"></script>	
         </body>
     </html>
